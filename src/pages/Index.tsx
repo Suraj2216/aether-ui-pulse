@@ -1,13 +1,26 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect } from 'react';
+import HeroSection from '@/components/home/HeroSection';
+import FeaturesSection from '@/components/home/FeaturesSection';
+import AboutPreview from '@/components/home/AboutPreview';
+import StatsCounter from '@/components/home/StatsCounter';
+import Testimonials from '@/components/home/Testimonials';
+import PricingSection from '@/components/home/PricingSection';
+import BlogPreview from '@/components/home/BlogPreview';
+import Newsletter from '@/components/home/Newsletter';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <HeroSection />
+      <FeaturesSection />
+      <AboutPreview />
+      <StatsCounter />
+      <Testimonials />
+      <PricingSection />
+      <BlogPreview />
+      <Newsletter />
+    </>
   );
 };
 
